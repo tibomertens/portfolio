@@ -26,3 +26,17 @@ nav .links div {
 p, a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 10px; /* Adjust the gap as needed */
+}
+
+.skill {
+  background-color: #262626; /* Add your desired background color */
+  padding: 10px; /* Add your desired padding */
+  text-align: center; /* Center the text within the boxes */
+  border-radius: 3px;
+}
+
