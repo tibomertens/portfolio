@@ -19,6 +19,7 @@
 
 h1,
 h2, 
+h3,
 nav .links div {
   font-family: "Cinzel", serif;
 }
@@ -39,4 +40,3 @@ p, a {
   text-align: center; /* Center the text within the boxes */
   border-radius: 3px;
 }
-

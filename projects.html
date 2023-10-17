@@ -4,78 +4,154 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="These are all my projects as a Full-stack developer, feel free to take a look!"
+      content="Passionate full-stack developer seeking internship opportunities. Let's connect and create together!"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Tibo - Full-stack developer</title>
+    <script
+      src="https://kit.fontawesome.com/c2626c7e45.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <nav>
-      <div class="logo"><img src="" alt="logo" /></div>
-      <div class="links">
-        <div class="home"><a href="index.html">Home</a></div>
+  <body class="bg-black text-white overflow-y-hidden">
+    <nav class="flex items-center justify-between p-6">
+      <div class="logo">
+        <a href=""><img src="" alt="logo" /></a>
+      </div>
+      <div class="links flex space-x-7 text-xl font-bold">
+        <div class="home active"><a href="index.html">Home</a></div>
         <div class="about"><a href="about.html">About</a></div>
-        <div class="projects active"><a href="projects.html">Projects</a></div>
+        <div class="projects"><a href="projects.html">Projects</a></div>
       </div>
     </nav>
-    <main>
-      <div>
-        <h1>Projects</h1>
-        <div class="line"></div>
-      </div>
-      <section class="projects">
-        <div class="project">
-          <div class="imgContainer"><img src="" alt="Project picture" /></div>
-          <div>
-            <h3>Promptopolis</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              quidem dolore, eligendi qui rerum quis cum iure, minus aliquam
-              exercitationem dolores assumenda sapiente. Quos laboriosam, sed
-              placeat odio suscipit velit?
-            </p>
-            <div class="btn"><a href="promptopolis.html">View</a></div>
+    <div class="flex flex-grow mt-[50px]">
+      <main class="w-screen">
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-4xl font-bold mb-7 ml-[100px]">Projects</h1>
+          <div
+            class="line w-[375px] h-[2px] rounded-full bg-[#D9C360] ml-[100px]"
+          ></div>
+        </div>
+        <div class="flex justify-center ml-[100px]">
+          <section class="projects flex gap-8 mt-[56px] pb-[100px]">
+            <div
+              class="project h-[400px] w-[300px] bg-[#D9D9D9] text-[#000000] rounded-[5px]"
+            >
+              <div
+                class="imgContainer w-[300px] h-[200px] bg-[#202124] flex items-center justify-center rounded-t-[5px]"
+              >
+                <img
+                  class="w-[250px] rounded-[5px]"
+                  src="images/promptopolisCover.png"
+                  alt="Project picture"
+                />
+              </div>
+              <div class="pt-5 pl-5 pr-5">
+                <h3 class="font-bold text-xl">Promptopolis</h3>
+                <p class="font-light text-sm pt-2 h-[70px]">
+                  A PHP web application where users can sell their own AI
+                  prompts.
+                </p>
+                <a href="promptopolis.html">
+                  <div
+                    class="btn w-full bg-[#D9C360] text-center py-1 font-bold text-medium mt-4 rounded-[3px] hover:bg-[#d2b946]"
+                  >
+                    <p>View</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="project h-[400px] w-[300px] bg-[#D9D9D9] text-[#000000] rounded-[5px]"
+            >
+              <div
+                class="imgContainer w-[300px] h-[200px] bg-[#202124] flex items-center justify-center rounded-t-[5px]"
+              >
+                <img
+                  class="w-[150px] rounded-[5px]"
+                  src="images/sensorSproutCover.png"
+                  alt="Project picture"
+                />
+              </div>
+              <div class="pt-5 pl-5 pr-5">
+                <h3 class="font-bold text-xl">SensorSprout</h3>
+                <p class="font-light text-sm pt-2 h-[70px]">
+                  A PHP web application that uses the LoRa network & IoT to
+                  display data from real-life sensors.
+                </p>
+                <a href="sensorSprout.html">
+                  <div
+                    class="btn w-full bg-[#D9C360] text-center py-1 font-bold text-medium mt-4 rounded-[3px] hover:bg-[#d2b946]"
+                  >
+                    <p>View</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="project h-[400px] w-[300px] bg-[#D9D9D9] text-[#000000] rounded-[5px]"
+            >
+              <div
+                class="imgContainer w-[300px] h-[200px] bg-[#202124] flex items-center justify-center rounded-t-[5px]"
+              >
+                <img
+                  class="w-[125px] rounded-[5px]"
+                  src="images/zengardenCover.png"
+                  alt="Project picture"
+                />
+              </div>
+              <div class="pt-5 pl-5 pr-5">
+                <h3 class="font-bold text-xl">CSS Zen Garden</h3>
+                <p class="font-light text-sm pt-2 h-[70px]">
+                  My own iteration of the famous CSS Zen Garden.
+                </p>
+                <a href="zengarden.html">
+                  <div
+                    class="btn w-full bg-[#D9C360] text-center py-1 font-bold text-medium mt-4 rounded-[3px] hover:bg-[#d2b946]"
+                  >
+                    <p>View</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <aside class="flex flex-col items-center mt-auto mr-[100px]">
+        <div class="socials flex flex-col items-center gap-1">
+          <div class="mail">
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/tibo-mertens-5516bb233/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="github">
+            <a href="https://github.com/TiboMertens"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/_tibo_m_/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </div>
         </div>
-        <div class="project">
-          <div class="imgContainer"><img src="" alt="Project picture" /></div>
-          <div>
-            <h3>SensorSprout</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              quidem dolore, eligendi qui rerum quis cum iure, minus aliquam
-              exercitationem dolores assumenda sapiente. Quos laboriosam, sed
-              placeat odio suscipit velit?
-            </p>
-            <div class="btn"><a href="sensorSprout.html">View</a></div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="imgContainer"><img src="" alt="Project picture" /></div>
-          <div>
-            <h3>CSS Zen garden</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              quidem dolore, eligendi qui rerum quis cum iure, minus aliquam
-              exercitationem dolores assumenda sapiente. Quos laboriosam, sed
-              placeat odio suscipit velit?
-            </p>
-            <div class="btn"><a href="zengarden.html">View</a></div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="socials">
-        <div>
-          <div class="mail"></div>
-          <div class="linkedin"></div>
-          <div class="github"></div>
-          <div class="twitter"></div>
-        </div>
-        <div class="line"></div>
-      </div>
-    </footer>
+        <div
+          class="line h-[200px] bg-[#D9C360] w-[2px] rounded-full my-4"
+        ></div>
+      </aside>
+    </div>
   </body>
 </html>
