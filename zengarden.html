@@ -2,55 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Passionate full-stack developer seeking internship opportunities. Let's connect and create together!"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Tibo - Full-stack developer</title>
+    <script
+      src="https://kit.fontawesome.com/c2626c7e45.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <nav>
-      <div class="logo"><img src="" alt="logo" /></div>
-      <div class="links">
-        <div class="home"><a href="index.html">Home</a></div>
+  <body class="bg-black text-white overflow-y-hidden">
+    <nav class="flex items-center justify-between p-6">
+      <div class="logo">
+        <a href=""><img src="" alt="logo" /></a>
+      </div>
+      <div class="links flex space-x-7 text-xl font-bold">
+        <div class="home active"><a href="index.html">Home</a></div>
         <div class="about"><a href="about.html">About</a></div>
-        <div class="projects active"><a href="projects.html">Projects</a></div>
+        <div class="projects"><a href="projects.html">Projects</a></div>
       </div>
     </nav>
-    <main>
-      <div>
-        <h1>CSS Zen garden</h1>
-        <div class="line"></div>
-      </div>
-      <section class="desc">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-          doloremque porro natus incidunt autem impedit quia? Fugit aliquid
-          tempore, consequatur officiis voluptates deserunt illum atque, soluta
-          ut iusto nihil laborum! Fuga soluta vel mollitia quaerat culpa, non
-          facere obcaecati ex hic iure magni molestias voluptatum dignissimos
-          dolore. Architecto ipsum voluptate deleniti corporis eius officia iste
-          sequi, voluptas ipsam laborum explicabo! Aliquid obcaecati excepturi,
-          possimus beatae temporibus eius praesentium accusantium. Nisi
-          similique perspiciatis nobis repellat provident nam. Nemo, sit qui.
-          Eos officiis voluptatibus eveniet sapiente in fugit soluta, veniam
-          iure ea!
-        </p>
-        <div class="link"><i></i><a href="#">///</a></div>
-        <section class="skills">
-          <div class="skill">CSS</div>
-        </section>
-      </section>
-    </main>
-    <footer>
-      <div class="socials">
-        <div>
-          <div class="mail"></div>
-          <div class="linkedin"></div>
-          <div class="github"></div>
-          <div class="twitter"></div>
+    <div class="flex flex-grow mt-[50px]">
+      <main class="ml-[150px]">
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-4xl font-bold mb-7">CSS Zengarden</h1>
+          <div class="line w-[375px] h-[2px] rounded-full bg-[#D9C360]"></div>
         </div>
-        <div class="line"></div>
-      </div>
-    </footer>
+        <section class="desc mt-[56px]">
+          <h2 class="text-2xl font-bold pb-4">Description</h2>
+          <p class="w-4/5">
+            Promptopolis, a captivating school project, serves as a remarkable
+            fusion of technology and creativity, offering users a tantalizing
+            glimpse into the world of AI-generated prompts.. <br />
+            <br />
+            At the heart of this project was a talented team, led by me as the
+            dedicated back-end developer. My journey with Promptopolis not only
+            highlighted the transformative power of AI but also provided an
+            invaluable personal revelation: a newfound passion for PHP
+            development. <br />
+            <br />
+            For an in-depth exploration of Promptopolis, you can visit my GitHub
+            repository. <br />
+            <br />
+          </p>
+        </section>
+        <div class="link">
+          <a class="text-[#d9c360]" href="https://tibomertens.be/zengarden/"
+            ><i class="fa-solid fa-link pr-3" style="color: #d9c360"></i
+            >www.tibomertens.be/zengarden</a
+          >
+        </div>
+        <section class="skills pb-[75px] mt-[24px]">
+          <h2 class="text-2xl font-bold pb-4">Skills</h2>
+          <div class="skillsContainer">
+            <div class="skill"><p>Javascript</p></div>
+            <div class="skill"><p>HTML/CSS</p></div>
+            <div class="skill"><p>PHP</p></div>
+            <div class="skill"><p>MySQL</p></div>
+          </div>
+        </section>
+      </main>
+      <aside class="flex flex-col items-center mt-auto mr-[100px]">
+        <div class="socials flex flex-col items-center gap-1">
+          <div class="mail">
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/tibo-mertens-5516bb233/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="github">
+            <a href="https://github.com/TiboMertens"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/_tibo_m_/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="line h-[200px] bg-[#D9C360] w-[2px] rounded-full my-4"
+        ></div>
+      </aside>
+    </div>
   </body>
 </html>
