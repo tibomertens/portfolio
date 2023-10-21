@@ -18,13 +18,14 @@
 }
 
 h1,
-h2, 
+h2,
 h3,
 nav .links div {
   font-family: "Cinzel", serif;
 }
 
-p, a {
+p,
+a {
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -39,4 +40,29 @@ p, a {
   padding: 10px; /* Add your desired padding */
   text-align: center; /* Center the text within the boxes */
   border-radius: 3px;
+}
+
+/* Add this to your existing CSS or create a new stylesheet */
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.links {
+  display: flex;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+/* Show mobile menu on mobile */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
 }

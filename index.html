@@ -22,16 +22,29 @@
       src="https://kit.fontawesome.com/c2626c7e45.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/hamburger.js" defer></script>
   </head>
   <body class="bg-black text-white overflow-y-hidden">
-    <nav class="flex items-center justify-between p-6">
-      <div class="logo">
-        <a href=""><img src="" alt="logo" /></a>
+    <nav class="p-6">
+      <div class="flex items-center justify-between">
+        <div class="logo">
+          <a href=""><img src="" alt="logo" /></a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <button id="menu-toggle-button" class="menu-icon">
+            <i class="hamburger fa-solid fa-bars" style="color: #d9c360"></i>
+          </button>
+        </div>
+        <div class="links space-x-7 text-xl font-bold">
+          <div class="home active"><a href="index.html">Home</a></div>
+          <div class="about"><a href="about.html">About</a></div>
+          <div class="projects"><a href="projects.html">Projects</a></div>
+        </div>
       </div>
-      <div class="links flex space-x-7 text-xl font-bold">
-        <div class="home active"><a href="index.html">Home</a></div>
-        <div class="about"><a href="about.html">About</a></div>
-        <div class="projects"><a href="projects.html">Projects</a></div>
+      <div class="links-mobile text-xl font-bold hidden">
+        <div class="home active py-2 border-b-2 border-[#D9C360]"><a href="index.html">Home</a></div>
+        <div class="about py-2 border-b-2 border-[#D9C360]"><a href="about.html">About</a></div>
+        <div class="projects py-2 border-b-2 border-[#D9C360]"><a href="projects.html">Projects</a></div>
       </div>
     </nav>
     <div class="flex flex-grow">
@@ -57,10 +70,24 @@
       <aside class="flex flex-col items-center mt-auto mr-[100px]">
         <!-- Use 'mt-auto' to push it to the bottom -->
         <div class="socials flex flex-col items-center gap-1">
-          <div class="mail"><a href=""><i class="fa-solid fa-envelope"></i></a></div>
-          <div class="linkedin"><a href="https://www.linkedin.com/in/tibo-mertens-5516bb233/"><i class="fa-brands fa-linkedin"></i></a></div>
-          <div class="github"><a href="https://github.com/TiboMertens"><i class="fa-brands fa-github"></i></a></div>
-          <div class="instagram"><a href="https://www.instagram.com/_tibo_m_/"><i class="fa-brands fa-instagram"></i></a></div>
+          <div class="mail">
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/tibo-mertens-5516bb233/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="github">
+            <a href="https://github.com/TiboMertens"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/_tibo_m_/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
         <div
           class="line h-[200px] bg-[#D9C360] w-[2px] rounded-full my-4"
