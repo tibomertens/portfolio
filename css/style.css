@@ -29,6 +29,11 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.active  {
+  color: #d9c360;
+  border-bottom: #d9c360 2px solid;
+}
+
 .skillsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
