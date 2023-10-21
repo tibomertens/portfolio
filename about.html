@@ -22,23 +22,44 @@
       src="https://kit.fontawesome.com/c2626c7e45.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/hamburger.js" defer></script>
   </head>
   <body class="bg-black text-white overflow-y-hidden">
-    <nav class="flex items-center justify-between p-6">
-      <div class="logo">
-        <a href=""><img src="" alt="logo" /></a>
+    <nav class="p-6">
+      <div class="flex items-center justify-between">
+        <div class="logo">
+          <a href=""><img src="" alt="logo" /></a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <button id="menu-toggle-button" class="menu-icon">
+            <i class="hamburger fa-solid fa-bars" style="color: #d9c360"></i>
+          </button>
+        </div>
+        <div class="links space-x-7 text-xl font-bold">
+          <div class="home"><a href="index.html">Home</a></div>
+          <div class="about active"><a href="about.html">About</a></div>
+          <div class="projects"><a href="projects.html">Projects</a></div>
+        </div>
       </div>
-      <div class="links flex space-x-7 text-xl font-bold">
-        <div class="home"><a href="index.html">Home</a></div>
-        <div class="about active"><a href="about.html">About</a></div>
-        <div class="projects"><a href="projects.html">Projects</a></div>
+      <div class="links-mobile text-xl font-bold hidden">
+        <div class="home py-2 border-b-2 border-[#D9C360]">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="about active py-2 border-b-2 border-[#D9C360]">
+          <a href="about.html">About</a>
+        </div>
+        <div class="projects py-2 border-b-2 border-[#D9C360]">
+          <a href="projects.html">Projects</a>
+        </div>
       </div>
     </nav>
     <div class="flex flex-grow mt-[50px]">
       <main class="">
         <div class="flex flex-col items-center justify-center">
           <h1 class="text-4xl font-bold mb-7 ml-[100px]">Who is Tibo?</h1>
-          <div class="line w-[375px] h-[2px] rounded-full bg-[#D9C360] ml-[100px]"></div>
+          <div
+            class="line w-[375px] h-[2px] rounded-full bg-[#D9C360] ml-[100px]"
+          ></div>
         </div>
         <section class="about ml-[150px] mt-[42px]">
           <h2 class="text-2xl font-bold">About me</h2>
@@ -49,7 +70,8 @@
             bringing ideas to life through web and mobile applications. What
             sets me apart is my ability to thrive in a team environment,
             collaborating seamlessly with diverse talents to achieve common
-            goals. <br /> <br />
+            goals. <br />
+            <br />
             Beyond the world of technology, I'm a devoted football fan, and my
             weekends often revolve around cheering for my favorite team. Off the
             field, I find solace in long walks with my four-legged companion, my
