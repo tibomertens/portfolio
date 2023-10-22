@@ -24,11 +24,11 @@
     ></script>
     <script src="js/hamburger.js" defer></script>
   </head>
-  <body class="bg-black text-white overflow-y-hidden">
+  <body class="bg-black text-white lg:overflow-y-hidden">
     <nav class="p-6">
       <div class="flex items-center justify-between">
         <div class="logo">
-          <a href=""><img src="" alt="logo" /></a>
+          <a href="index.html"><img class="w-[64px]" src="images/logo.svg" alt="logo" /></a>
         </div>
         <div class="mobile-menu-toggle">
           <button id="menu-toggle-button" class="menu-icon">
@@ -55,15 +55,15 @@
     </nav>
     <div class="flex flex-grow mt-[50px]">
       <main class="">
-        <div class="flex flex-col items-center justify-center">
-          <h1 class="text-4xl font-bold mb-7 ml-[100px]">Who is Tibo?</h1>
+        <div class="md:flex flex-col items-center justify-center">
+          <h1 class="text-4xl font-bold mb-7 ml-[50px] lg:ml-[100px]">Who is Tibo?</h1>
           <div
-            class="line w-[375px] h-[2px] rounded-full bg-[#D9C360] ml-[100px]"
+            class="line w-[375px] h-[2px] rounded-full bg-[#D9C360] ml-[50px] lg:ml-[100px]"
           ></div>
         </div>
-        <section class="about ml-[150px] mt-[42px]">
+        <section class="about ml-[50px] lg:ml-[150px] mt-[42px]">
           <h2 class="text-2xl font-bold">About me</h2>
-          <p class="w-4/5 pt-4 pb-10 text-[#e6e6e6]">
+          <p class="sm:w-4/5 pt-4 pb-10 text-[#e6e6e6]">
             I'm a full-stack developer with a passion for crafting digital
             experiences that push the boundaries of innovation. With a
             background in coding and a flair for design, I'm dedicated to
@@ -80,7 +80,7 @@
             connected to the world around me.
           </p>
         </section>
-        <section class="skills ml-[150px] pb-[150px]">
+        <section class="skills ml-[50px] mr-[24px] lg:ml-[150px] pb-[50px] lg:pb-[150px]">
           <h2 class="text-2xl font-bold pb-4">Skills</h2>
           <div class="skillsContainer">
             <div class="skill"><p>Javascript</p></div>
@@ -93,7 +93,7 @@
           </div>
         </section>
       </main>
-      <aside class="flex flex-col items-center mt-auto mr-[100px]">
+      <aside class="flex flex-col items-center mt-auto mr-[24px] sm:mr-[64px] lg:mr-[100px]">
         <!-- Use 'mt-auto' to push it to the bottom -->
         <div class="socials flex flex-col items-center gap-1">
           <div class="mail">
@@ -116,7 +116,7 @@
           </div>
         </div>
         <div
-          class="line h-[200px] bg-[#D9C360] w-[2px] rounded-full my-4"
+          class="line h-[150px] sm:h-[200px] bg-[#D9C360] w-[2px] rounded-full my-4"
         ></div>
       </aside>
     </div>
