@@ -24,11 +24,11 @@
     ></script>
     <script src="js/hamburger.js" defer></script>
   </head>
-  <body class="bg-black text-white overflow-y-hidden">
+  <body class="bg-black text-white lg:overflow-y-hidden">
     <nav class="p-6">
       <div class="flex items-center justify-between">
         <div class="logo">
-          <a href=""><img src="" alt="logo" /></a>
+          <a href="index.html"><img class="w-[64px]" src="images/logo.svg" alt="logo" /></a>
         </div>
         <div class="mobile-menu-toggle">
           <button id="menu-toggle-button" class="menu-icon">
@@ -58,16 +58,16 @@
     <div class="flex flex-grow mt-[50px]">
       <main class="w-screen">
         <div class="flex flex-col items-center justify-center">
-          <h1 class="text-4xl font-bold mb-7 ml-[100px]">Projects</h1>
+          <h1 class="text-4xl font-bold mb-7 lg:ml-[100px]">Projects</h1>
           <div
-            class="line w-[375px] h-[2px] rounded-full bg-[#D9C360] ml-[100px]"
+            class="line w-[375px] h-[2px] rounded-full bg-[#D9C360] lg:ml-[100px]"
           ></div>
         </div>
-        <div class="flex justify-center ml-[100px]">
-          <section class="projects flex gap-8 mt-[56px] pb-[100px]">
+        <div class="flex justify-center lg:ml-[100px]">
+          <section class="projects lg:flex flex-wrap gap-8 mt-[56px] pb-[100px]">
             <a href="promptopolis.html">
               <div
-                class="project h-[400px] w-[300px] bg-[#D9D9D9] text-[#000000] rounded-[5px]"
+                class="project h-[400px] w-[300px] bg-[#D9D9D9] mb-8 lg:mb-0 text-[#000000] rounded-[5px]"
               >
                 <div
                   class="imgContainer w-[300px] h-[200px] bg-[#202124] flex items-center justify-center rounded-t-[5px]"
@@ -96,7 +96,7 @@
             </a>
             <a href="sensorSprout.html">
               <div
-                class="project h-[400px] w-[300px] bg-[#D9D9D9] text-[#000000] rounded-[5px]"
+                class="project h-[400px] w-[300px] bg-[#D9D9D9] mb-8 lg:mb-0 text-[#000000] rounded-[5px]"
               >
                 <div
                   class="imgContainer w-[300px] h-[200px] bg-[#202124] flex items-center justify-center rounded-t-[5px]"
@@ -154,7 +154,7 @@
           </section>
         </div>
       </main>
-      <aside class="flex flex-col items-center mt-auto mr-[100px]">
+      <aside class="hidden lg:flex flex-col items-center mt-auto mr-[24px] sm:mr-[64px] lg:mr-[100px]">
         <div class="socials flex flex-col items-center gap-1">
           <div class="mail">
             <a href=""><i class="fa-solid fa-envelope"></i></a>
