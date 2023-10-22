@@ -24,11 +24,13 @@
     ></script>
     <script src="js/hamburger.js" defer></script>
   </head>
-  <body class="bg-black text-white overflow-y-hidden">
+  <body class="bg-black text-white lg:overflow-y-hidden">
     <nav class="p-6">
       <div class="flex items-center justify-between">
         <div class="logo">
-          <a href=""><img src="" alt="logo" /></a>
+          <a href="index.html"
+            ><img class="w-[64px]" src="images/logo.svg" alt="logo"
+          /></a>
         </div>
         <div class="mobile-menu-toggle">
           <button id="menu-toggle-button" class="menu-icon">
@@ -56,14 +58,14 @@
       </div>
     </nav>
     <div class="flex flex-grow mt-[50px]">
-      <main class="ml-[150px]">
-        <div class="flex flex-col items-center justify-center">
+      <main class="ml-[50px] lg:ml-[150px]">
+        <div class="md:flex flex-col items-center justify-center">
           <h1 class="text-4xl font-bold mb-7">Promptopolis</h1>
           <div class="line w-[375px] h-[2px] rounded-full bg-[#D9C360]"></div>
         </div>
         <section class="desc mt-[56px]">
           <h2 class="text-2xl font-bold pb-4">Description</h2>
-          <p class="w-4/5">
+          <p class="sm:w-4/5">
             Promptopolis, a captivating school project, serves as a remarkable
             fusion of technology and creativity, offering users a tantalizing
             glimpse into the world of AI-generated prompts.. <br />
@@ -85,7 +87,7 @@
             >www.tibomertens.be/promptopolis</a
           >
         </div>
-        <section class="skills pb-[75px] mt-[24px]">
+        <section class="skills pb-[50px] mr-[24px] lg:pb-[75px] mt-[24px]">
           <h2 class="text-2xl font-bold pb-4">Skills</h2>
           <div class="skillsContainer">
             <div class="skill"><p>Javascript</p></div>
@@ -95,7 +97,9 @@
           </div>
         </section>
       </main>
-      <aside class="flex flex-col items-center mt-auto mr-[100px]">
+      <aside
+        class="flex flex-col items-center mt-auto mr-[24px] sm:mr-[64px] lg:mr-[100px]"
+      >
         <div class="socials flex flex-col items-center gap-1">
           <div class="mail">
             <a href=""><i class="fa-solid fa-envelope"></i></a>
@@ -117,7 +121,7 @@
           </div>
         </div>
         <div
-          class="line h-[200px] bg-[#D9C360] w-[2px] rounded-full my-4"
+          class="line h-[150px] sm:h-[200px] bg-[#D9C360] w-[2px] rounded-full my-4"
         ></div>
       </aside>
     </div>
