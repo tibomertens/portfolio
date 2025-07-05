@@ -70,4 +70,8 @@ a {
   .menu-icon {
     display: block;
   }
+
+  aside {
+    display: none !important;
+  }
 }
